@@ -12,7 +12,7 @@ function LanguageSwitcher() {
       <select
         onChange={handleChange}
         value={i18n.language}
-        className="border border-blue-500 rounded-xl px-[25px] py-[10px] bg-blue-500 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="border border-blue-900 rounded-xl px-[25px] py-[10px] bg-blue-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <option value="en"> English</option>
         <option value="uz">O'zbek</option>

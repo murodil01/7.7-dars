@@ -1,60 +1,78 @@
 import { useTranslation } from "react-i18next";
+import deposit from "../assets/deposit.png";
+import map from "../assets/map.png";
+import payment from "../assets/payment.png";
 
 const Gift = () => {
   const { t } = useTranslation();
 
   return (
-   {/* <div
-      className="py-6"
+    <div
+      className="py-[154px] text-white border-t-[1px] border-gray-100"
       style={{
-        background: "linear-gradient(100.11deg, #C9D1FF 50.32%, #F9F4BB 94.79%)",
+        background:
+          "radial-gradient(50% 50% at 50% 50%, #30313A 0%, #2C2D34 20.31%, #1F2025 50.52%, #18191E 86.98%, #17181D 99.48%)",
       }}
     >
-      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 px-4">
-        <div
-          className="w-full lg:w-1/2 rounded-2xl border-2 border-blue-400 flex flex-col"
-          style={{
-            background: "linear-gradient(180deg, #82A6FD 0%, #1342B4 100%)",
-          }}
-        >
-          <div className="px-6 sm:px-10 pt-10 flex flex-col text-center lg:text-left">
-            <h3 className="mb-4 text-[18px] text-white font-bold leading-snug">
-              {t("gift_become_plus")}{" "}
-              <span className="text-[#FFE602]">{t("gift_enjoy_benefits")}</span>
-            </h3>
-            <p className="mb-6 text-[18px] text-white font-bold">
-              {t("gift_shop_supercoins")}
-            </p>
-          </div>
-          <img
-            src={gift1}
-            alt="Gift"
-            className="w-full h-auto object-contain px-4 pb-4 mt-auto"
-          />
-        </div>
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-2xl md:text-4xl font-semibold mb-10 text-center md:text-left">
+          {t("gift.title")}
+        </h1>
 
-        <div
-          className="w-full lg:w-1/2 rounded-2xl border-2 border-blue-300 flex flex-col"
-          style={{
-            background: "linear-gradient(181.54deg, #8567D9 5.44%, #2C1371 98.69%)",
-          }}
-        >
-          <div className="px-6 sm:px-10 pt-10 flex flex-col text-center lg:text-left">
-            <h3 className="mb-4 text-[28px] sm:text-[32px] lg:text-[39px] text-white font-bold leading-tight">
-              {t("gift_card_title")}
-            </h3>
-            <p className="text-[15px] text-white font-sans leading-relaxed">
-              {t("gift_card_desc")}
+        <div className="flex flex-col md:flex-row justify-center md:justify-between gap-6 items-center">
+          <div
+            className="w-[380px] h-[320px] rounded-xl p-4 flex flex-col items-center justify-between text-center"
+            style={{
+              background:
+                "linear-gradient(148.14deg, #202124 3.67%, #24252D 43.12%, #1C1D21 96.04%)",
+            }}
+          >
+            <img
+              src={deposit}
+              alt="Deposit"
+              className="w-[260px] h-[162px] object-contain"
+            />
+            <p className="text-left text-sm md:text-base w-full pb-[15px]">
+              {t("gift.card1")}
             </p>
           </div>
-          <img
-            src={gift2}
-            alt="Gift"
-            className="w-full h-auto object-contain px-4 pb-4 mt-auto"
-          />
+
+          <div
+            className="w-[380px] h-[320px] rounded-xl p-4 flex flex-col items-center justify-between text-center"
+            style={{
+              background:
+                "linear-gradient(148.14deg, #202124 3.67%, #24252D 43.12%, #1C1D21 96.04%)",
+            }}
+          >
+            <img
+              src={map}
+              alt="Map"
+              className="w-[346px] h-[209px] object-contain"
+            />
+            <p className="text-left text-sm md:text-base w-full pb-[15px]">
+              {t("gift.card2")}
+            </p>
+          </div>
+
+          <div
+            className="w-[380px] h-[320px] rounded-xl p-4 flex flex-col items-center justify-between text-center"
+            style={{
+              background:
+                "linear-gradient(148.14deg, #202124 3.67%, #24252D 43.12%, #1C1D21 96.04%)",
+            }}
+          >
+            <img
+              src={payment}
+              alt="Payment"
+              className="w-[260px] h-[176px] object-contain"
+            />
+            <p className="text-left text-sm md:text-base w-full pb-[15px]">
+              {t("gift.card3")}
+            </p>
+          </div>
         </div>
       </div>
-    </div>*/}
+    </div>
   );
 };
 

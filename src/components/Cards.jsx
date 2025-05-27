@@ -1,39 +1,59 @@
 import { useTranslation } from "react-i18next";
+import img1 from "../assets/img1.svg";
+import pics from "../assets/pics.svg";
+import img2 from "../assets/img2.png";
 
 function Cards() {
   const { t } = useTranslation();
 
   return (
-    {/*<div className="max-w-[1200px] mx-auto my-12 px-4">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 p-6 lg:p-[60px] rounded-3xl"
-        style={{
-          background: "linear-gradient(97.69deg, #3DA3EA 0.54%, #66DE87 69%)",
-        }}
-      >
-        <div className="w-full lg:w-1/2 flex flex-col gap-4 text-center lg:text-left">
-          <h3 className="text-black text-[32px] sm:text-[40px] lg:text-[46px] font-bold leading-tight">
-            {t('flipkartGroceryTitlePart1')}:
-            <span className="text-white block lg:inline text-[32px] sm:text-[40px] lg:text-[46px] font-bold ml-1">
-              {t('flipkartGroceryTitlePart2')}
-            </span>
-          </h3>
-          <p className="text-white text-[16px] sm:text-[18px] font-inter">
-            {t('flipkartGroceryDescription')}
-          </p>
-          <button className="w-full sm:w-[250px] lg:w-[350px] h-[56px] sm:h-[66px] rounded-3xl bg-white text-[#04BB00] font-bold text-[20px] sm:text-[24px] lg:text-[28px] border-2 border-slate-200 mx-auto lg:mx-0">
-            {t('flipkartGroceryButton')}
-          </button>
-        </div>
+    <div
+      style={{
+        background:
+          "radial-gradient(50% 50% at 50% 50%, #30313A 0%, #2C2D34 20.31%, #1F2025 50.52%, #18191E 86.98%, #17181D 99.48%)",
+      }}
+    >
+      <div className="max-w-7xl mx-auto text-white pt-[52px] pb-[148px]">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 text-center md:text-left">
+          {t("cards.title")}
+        </h1>
 
-        <div className="w-full lg:w-1/2 flex justify-center">
-          <img
-            src={rice}
-            alt={t('riceAltText')}
-            className="w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[611px] h-auto object-contain"
-          />
+        <div className="flex flex-col gap-8 mt-[80px]">
+          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 border-2 border-grey-100 rounded-xl py-[13px] px-4 sm:px-6 md:px-[81px]">
+            <div className="flex flex-col gap-4 max-w-[350px] text-center md:text-left">
+              <h3 className="text-lg font-semibold">{t("cards.card1.title")}</h3>
+              <p>{t("cards.card1.desc")}</p>
+              <button className="w-[203px] h-[52px] border-2 bg-white text-black py-[15px] px-[50px] rounded-lg mx-auto md:mx-0">
+                {t("cards.card1.btn")}
+              </button>
+            </div>
+            <img src={img1} alt="Exchange" className="max-w-[566px] w-full h-[474px]" />
+          </div>
+
+          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 border-2 border-grey-100 rounded-xl py-[13px] px-4 sm:px-6 md:px-[81px]">
+            <div className="flex flex-col gap-4 max-w-[350px] text-center md:text-left">
+              <h3 className="text-lg font-semibold">{t("cards.card2.title")}</h3>
+              <p>{t("cards.card2.desc")}</p>
+              <button className="w-[203px] h-[52px] border-2 bg-white text-black py-[15px] px-[50px] rounded-lg mx-auto md:mx-0">
+                {t("cards.card2.btn")}
+              </button>
+            </div>
+            <img src={pics} alt="Concierge" className="max-w-[665px] w-full h-[457px]" />
+          </div>
+
+          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 border-2 border-grey-100 rounded-xl py-[13px] px-4 sm:px-6 md:px-[81px]">
+            <div className="flex flex-col gap-4 max-w-[350px] text-center md:text-left">
+              <h3 className="text-lg font-semibold">{t("cards.card3.title")}</h3>
+              <p>{t("cards.card3.desc")}</p>
+              <button className="w-[203px] h-[52px] border-2 bg-white text-black py-[15px] px-[50px] rounded-lg mx-auto md:mx-0">
+                {t("cards.card3.btn")}
+              </button>
+            </div>
+            <img src={img2} alt="Wallet" className="max-w-[456px] w-full h-[357px]" />
+          </div>
         </div>
       </div>
-    </div>*/}
+    </div>
   );
 }
 
